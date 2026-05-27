@@ -1,6 +1,79 @@
 import { createHash, randomInt, timingSafeEqual } from 'node:crypto';
 import { createServer } from 'node:http';
+import { readFileSync } from 'node:fs';
 import { WebSocket, WebSocketServer } from 'ws';
+
+// ---------------------------------------------------------------------------
+// Data — loaded once at startup from data.json
+// ---------------------------------------------------------------------------
+const data = JSON.parse(readFileSync(new URL('./data.json', import.meta.url)));
+
+/**
+ * Registry of named data channels.
+ * Each key is the channel name clients subscribe to; the value is a getter
+ * that returns the current snapshot for that channel.
+ *
+ * Add / remove entries here to expose new channels without touching the
+ * connection or tick logic.
+ */
+const DATA_CHANNELS = {
+  futuresAccounts:          () => data.futuresAccounts,
+  predictionsAccounts:      () => data.predictionsAccounts,
+  predictionsRecentProducts:() => data.predictionsRecentProducts,
+  allMarkets:               () => data.allMarkets,
+  featured_markets:         () => data.featured_markets,
+  'allMarkets.futures':     () => data.allMarkets.futures,
+  'allMarkets.predictions': () => data.allMarkets.predictions,
+};
+
+/**
+ * Send a full data-channel snapshot to one WebSocket client.
+ *
+ * Message shape: `{ type: <channel>, data: <list|object>, t: <ms> }`
+ *
+ * @param {WebSocket} ws
+ * @param {string} channel  - must be a key in DATA_CHANNELS
+ * @returns {boolean}        - false when the channel name is unknown
+ */
+function sendDataList(ws, channel) {
+  const getter = DATA_CHANNELS[channel];
+  if (!getter) {
+    ws.send(
+      JSON.stringify({
+        type: 'error',
+        message: `Unknown channel: "${channel}". Available: ${Object.keys(DATA_CHANNELS).join(', ')}`,
+        t: Date.now(),
+      }),
+    );
+    return false;
+  }
+  ws.send(JSON.stringify({ type: channel, data: getter(), t: Date.now() }));
+  return true;
+}
+
+/**
+ * Broadcast a data-channel snapshot to every currently-subscribed client.
+ *
+ * @param {string} channel
+ * @returns {number}  count of clients that received the message
+ */
+function broadcastDataList(channel) {
+  const getter = DATA_CHANNELS[channel];
+  if (!getter) return 0;
+  const msg = JSON.stringify({ type: channel, data: getter(), t: Date.now() });
+  let sent = 0;
+  for (const client of wss.clients) {
+    if (client.readyState !== WebSocket.OPEN) continue;
+    if (!client.subscriptions?.has(channel)) continue;
+    try {
+      client.send(msg);
+      sent += 1;
+    } catch {
+      /* ignore half-closed sockets */
+    }
+  }
+  return sent;
+}
 
 const RANDOM_TICK_MS = 500;
 const ACTIVITY_LOG_MAX = 100;
@@ -808,14 +881,29 @@ setInterval(() => {
   const t = Date.now();
   for (const client of wss.clients) {
     if (client.readyState !== WebSocket.OPEN) continue;
+
+    // --- Data-channel subscribers: push a snapshot for every subscribed channel ---
+    if (client.subscriptions?.size > 0) {
+      for (const channel of client.subscriptions) {
+        const getter = DATA_CHANNELS[channel];
+        if (!getter) continue;
+        try {
+          client.send(JSON.stringify({ type: channel, data: getter(), t }));
+        } catch {
+          /* ignore */
+        }
+      }
+      continue; // skip random tick for subscribed clients
+    }
+
+    // --- Default random-tick for clients that haven't subscribed to any channel ---
     const type =
       typeof client.lastTickType === 'string' && client.lastTickType.length > 0
         ? client.lastTickType
         : DEFAULT_TICK_TYPE;
     const value = randomInt(0, 1_000_000_000);
-    const msg = JSON.stringify({ type, value, t });
     try {
-      client.send(msg);
+      client.send(JSON.stringify({ type, value, t }));
     } catch {
       /* ignore send errors (e.g. half-closed) */
     }
@@ -827,15 +915,37 @@ wss.on('connection', (ws, req) => {
   const creds = queryCredentials(req);
   const user = creds?.username ?? '?';
   ws.lastTickType = DEFAULT_TICK_TYPE;
+
+  /** Channels this client has subscribed to. */
+  ws.subscriptions = new Set();
+
   console.log(`[ws] open user=${user} ${id} (${wss.clients.size} clients)`);
 
+  // ---- Send welcome with available channels --------------------------------
   ws.send(
-    JSON.stringify({ type: 'welcome', message: 'connected', t: Date.now() }),
+    JSON.stringify({
+      type: 'welcome',
+      message: 'connected',
+      channels: Object.keys(DATA_CHANNELS),
+      t: Date.now(),
+    }),
   );
 
-  ws.on('message', (data, isBinary) => {
-    const payload = isBinary ? data : data.toString();
-    ws.lastTickType = tickTypeFromClientMessage(data, isBinary);
+  // ---- Auto-subscribe if ?channel= is present in the URL ------------------
+  try {
+    const url = new URL(req.url ?? '/', `http://localhost`);
+    const initChannel = url.searchParams.get('channel');
+    if (initChannel && DATA_CHANNELS[initChannel]) {
+      ws.subscriptions.add(initChannel);
+      console.log(`[ws] auto-subscribed ${user} → ${initChannel}`);
+      sendDataList(ws, initChannel);
+    }
+  } catch {
+    /* malformed URL — ignore */
+  }
+
+  ws.on('message', (rawData, isBinary) => {
+    const payload = isBinary ? rawData : rawData.toString();
     console.log(`[ws] message from ${user}:`, payload);
 
     pushActivity({
@@ -844,12 +954,58 @@ wss.on('connection', (ws, req) => {
       user,
       remote: id,
       framing: isBinary ? 'binary' : 'text',
-      body: isBinary ? Buffer.from(data).toString('base64') : String(payload),
+      body: isBinary ? Buffer.from(rawData).toString('base64') : String(payload),
     });
 
+    // ---- Try to parse as a channel-control message -----------------------
+    if (!isBinary) {
+      try {
+        const msg = JSON.parse(payload);
+
+        // subscribe
+        if (msg.type === 'subscribe' && msg.channel) {
+          const ch = String(msg.channel);
+          ws.subscriptions.add(ch);
+          ws.lastTickType = ch;
+          console.log(`[ws] subscribe ${user} → ${ch}`);
+          const ok = sendDataList(ws, ch); // immediate snapshot
+          if (ok) {
+            ws.send(JSON.stringify({ type: 'subscribed', channel: ch, t: Date.now() }));
+          }
+          return;
+        }
+
+        // unsubscribe
+        if (msg.type === 'unsubscribe' && msg.channel) {
+          const ch = String(msg.channel);
+          ws.subscriptions.delete(ch);
+          console.log(`[ws] unsubscribe ${user} → ${ch}`);
+          ws.send(JSON.stringify({ type: 'unsubscribed', channel: ch, t: Date.now() }));
+          return;
+        }
+
+        // list available channels
+        if (msg.type === 'channels') {
+          ws.send(
+            JSON.stringify({
+              type: 'channels',
+              channels: Object.keys(DATA_CHANNELS),
+              subscribed: [...ws.subscriptions],
+              t: Date.now(),
+            }),
+          );
+          return;
+        }
+      } catch {
+        /* not JSON — fall through to echo */
+      }
+    }
+
+    // ---- Default: echo + update lastTickType for random-tick clients ------
+    ws.lastTickType = tickTypeFromClientMessage(rawData, isBinary);
     const reply = {
       type: 'echo',
-      payload: isBinary ? Buffer.from(data).toString('base64') : payload,
+      payload: isBinary ? Buffer.from(rawData).toString('base64') : payload,
       t: Date.now(),
     };
     ws.send(JSON.stringify(reply));

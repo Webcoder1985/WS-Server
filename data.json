@@ -1,0 +1,111 @@
+{
+  "futuresAccounts": [
+    { "id": "1", "label": "E1000", "nlv": 9842.15, "changeUsd": 112, "changePct": 1.15 },
+    { "id": "2", "label": "E2000", "nlv": 16200.33, "changeUsd": -95, "changePct": -0.58 },
+    { "id": "3", "label": "E3000", "nlv": 12540.25, "changeUsd": 240, "changePct": 1.95 },
+    {
+      "id": "4",
+      "label": "E4000",
+      "nlv": 23105,
+      "changeUsd": 305,
+      "changePct": 1.34,
+      "recentProducts": {
+        "futures": [
+          {
+            "id": "rt-1",
+            "symbol": "6B",
+            "name": "E-Micro British Pound",
+            "volume": "173.2M",
+            "markPrice": "0.99907",
+            "changePct": "-0.03%",
+            "buyPrice": "54,245",
+            "sellPrice": "54,245"
+          },
+          {
+            "id": "rt-2",
+            "symbol": "GC",
+            "name": "E-Micro Gold",
+            "volume": "98.6M",
+            "markPrice": "1,969.3",
+            "changePct": "-0.77%",
+            "buyPrice": "54,245",
+            "sellPrice": "54,245"
+          }
+        ],
+        "predictions": []
+      }
+    },
+    { "id": "5", "label": "E5000", "nlv": 8733.22, "changeUsd": -42, "changePct": -0.48 },
+    { "id": "6", "label": "E6000", "nlv": 18990.9, "changeUsd": 178, "changePct": 0.95 },
+    { "id": "7", "label": "E7000", "nlv": 11200, "changeUsd": 0, "changePct": 0 },
+    { "id": "8", "label": "E8000", "nlv": 45210.55, "changeUsd": -620, "changePct": -1.35 },
+    { "id": "9", "label": "E9000", "nlv": 7688.01, "changeUsd": 55, "changePct": 0.72 },
+    { "id": "10", "label": "E10000", "nlv": 30500, "changeUsd": 410, "changePct": 1.36 }
+  ],
+  "predictionsAccounts": [
+    { "id": "p1", "label": "P1000", "nlv": 5210.4, "changeUsd": 42, "changePct": 0.81, "recentitems": false },
+    { "id": "p2", "label": "P2000", "nlv": 11980.65, "changeUsd": -76, "changePct": -0.63, "recentitems": false },
+    { "id": "p3", "label": "P3000", "nlv": 8450.12, "changeUsd": 133, "changePct": 1.6, "recentitems": false },
+    { "id": "p4", "label": "P4000", "nlv": 17320, "changeUsd": -54, "changePct": -0.31, "recentitems": false },
+    { "id": "p5", "label": "P5000", "nlv": 26890.75, "changeUsd": 205, "changePct": 0.77, "recentitems": true}
+  ],
+  "predictionsRecentProducts": [
+    {
+      "id": "rt-1",
+      "symbol": "us",
+      "name": "Will the US government shut down this year?",
+      "volume": "Politics",
+      "markPrice": "12%",
+      "changePct": "-1.2%",
+      "buyPrice": "100 USD",
+      "sellPrice": "833 USD"
+    },
+    {
+      "id": "rt-2",
+      "symbol": "nba",
+      "name": "Will the Fed cut rates by September?",
+      "volume": "Macro",
+      "markPrice": "41%",
+      "changePct": "+2.8%",
+      "buyPrice": "250 USD",
+      "sellPrice": "610 USD"
+    },
+    {
+      "id": "rt-3",
+      "symbol": "nba",
+      "name": "Will Bitcoin close above 90k this month?",
+      "volume": "Crypto",
+      "markPrice": "28%",
+      "changePct": "+4.5%",
+      "buyPrice": "150 USD",
+      "sellPrice": "535 USD"
+    }
+  ],
+  "allMarkets": {
+    "futures": [
+      { "id": "mkt-001", "symbol": "M001", "name": "Market 001", "volume": "100.3M", "markPrice": "1,007.13", "changePct": "+0.17%", "trend": "up" },
+      { "id": "mkt-002", "symbol": "M002", "name": "Market 002", "volume": "100.6M", "markPrice": "1,014.26", "changePct": "-0.24%", "trend": "down" },
+      { "id": "mkt-003", "symbol": "M003", "name": "Market 003", "volume": "100.9M", "markPrice": "1,021.39", "changePct": "+0.31%", "trend": "up" },
+      { "id": "mkt-004", "symbol": "M004", "name": "Market 004", "volume": "101.2M", "markPrice": "1,028.52", "changePct": "-0.38%", "trend": "down" },
+      { "id": "mkt-005", "symbol": "M005", "name": "Market 005", "volume": "101.5M", "markPrice": "1,035.65", "changePct": "+0.45%", "trend": "up" },
+      { "id": "mkt-006", "symbol": "M006", "name": "Market 006", "volume": "101.8M", "markPrice": "1,042.78", "changePct": "-0.52%", "trend": "down", "watchlisted": true },
+      { "id": "mkt-007", "symbol": "M007", "name": "Market 007", "volume": "102.1M", "markPrice": "1,049.91", "changePct": "+0.59%", "trend": "up" },
+      { "id": "mkt-008", "symbol": "M008", "name": "Market 008", "volume": "102.4M", "markPrice": "1,057.04", "changePct": "-0.66%", "trend": "down" },
+      { "id": "mkt-009", "symbol": "M009", "name": "Market 009", "volume": "102.7M", "markPrice": "1,064.17", "changePct": "+0.73%", "trend": "up" },
+      { "id": "mkt-010", "symbol": "M010", "name": "Market 010", "volume": "103.0M", "markPrice": "1,071.30", "changePct": "-0.80%", "trend": "down", "watchlisted": true, "featured": true }
+    ],
+    "predictions": []
+  },
+   "featured_markets": [
+      { "id": "mkt-001", "symbol": "M001", "name": "Market 001", "volume": "100.3M", "markPrice": "1,007.13", "changePct": "+0.17%", "trend": "up" },
+      { "id": "mkt-002", "symbol": "M002", "name": "Market 002", "volume": "100.6M", "markPrice": "1,014.26", "changePct": "-0.24%", "trend": "down" },
+      { "id": "mkt-003", "symbol": "M003", "name": "Market 003", "volume": "100.9M", "markPrice": "1,021.39", "changePct": "+0.31%", "trend": "up" },
+      { "id": "mkt-004", "symbol": "M004", "name": "Market 004", "volume": "101.2M", "markPrice": "1,028.52", "changePct": "-0.38%", "trend": "down" },
+      { "id": "mkt-005", "symbol": "M005", "name": "Market 005", "volume": "101.5M", "markPrice": "1,035.65", "changePct": "+0.45%", "trend": "up" }
+  ],
+  "pulseEvents": [
+    { "id": "p1", "time": "14:00", "day": "TODAY",    "title": "FOMC rate decision", "subtitle": "Consensus hold · in 4h 19m", "priority": "HIGH" },
+    { "id": "p2", "time": "16:00", "day": "TODAY",    "title": "RTH session close",  "subtitle": "CME extended hours follow",  "priority": "INFO" },
+    { "id": "p3", "time": "16:00", "day": "TOMORROW", "title": "CPI release",         "subtitle": "CME extended hours follow",  "priority": "HIGH" }
+  ]
+}
