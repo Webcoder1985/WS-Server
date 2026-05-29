@@ -1,8 +1,26 @@
 {
   "futuresAccounts": [
-    { "id": "1", "label": "E1000", "nlv": 9842.15, "changeUsd": 112, "changePct": 1.15 },
-    { "id": "2", "label": "E2000", "nlv": 16200.33, "changeUsd": -95, "changePct": -0.58 },
-    { "id": "3", "label": "E3000", "nlv": 12540.25, "changeUsd": 240, "changePct": 1.95 },
+    {
+      "id": "1",
+      "label": "E1000",
+      "nlv": 9842.15,
+      "changeUsd": 112,
+      "changePct": 1.15
+    },
+    {
+      "id": "2",
+      "label": "E2000",
+      "nlv": 16200.33,
+      "changeUsd": -95,
+      "changePct": -0.58
+    },
+    {
+      "id": "3",
+      "label": "E3000",
+      "nlv": 12540.25,
+      "changeUsd": 240,
+      "changePct": 1.95
+    },
     {
       "id": "4",
       "label": "E4000",
@@ -35,19 +53,90 @@
         "predictions": []
       }
     },
-    { "id": "5", "label": "E5000", "nlv": 8733.22, "changeUsd": -42, "changePct": -0.48 },
-    { "id": "6", "label": "E6000", "nlv": 18990.9, "changeUsd": 178, "changePct": 0.95 },
-    { "id": "7", "label": "E7000", "nlv": 11200, "changeUsd": 0, "changePct": 0 },
-    { "id": "8", "label": "E8000", "nlv": 45210.55, "changeUsd": -620, "changePct": -1.35 },
-    { "id": "9", "label": "E9000", "nlv": 7688.01, "changeUsd": 55, "changePct": 0.72 },
-    { "id": "10", "label": "E10000", "nlv": 30500, "changeUsd": 410, "changePct": 1.36 }
+    {
+      "id": "5",
+      "label": "E5000",
+      "nlv": 8733.22,
+      "changeUsd": -42,
+      "changePct": -0.48
+    },
+    {
+      "id": "6",
+      "label": "E6000",
+      "nlv": 18990.9,
+      "changeUsd": 178,
+      "changePct": 0.95
+    },
+    {
+      "id": "7",
+      "label": "E7000",
+      "nlv": 11200,
+      "changeUsd": 0,
+      "changePct": 0
+    },
+    {
+      "id": "8",
+      "label": "E8000",
+      "nlv": 45210.55,
+      "changeUsd": -620,
+      "changePct": -1.35
+    },
+    {
+      "id": "9",
+      "label": "E9000",
+      "nlv": 7688.01,
+      "changeUsd": 55,
+      "changePct": 0.72
+    },
+    {
+      "id": "10",
+      "label": "E10000",
+      "nlv": 30500,
+      "changeUsd": 410,
+      "changePct": 1.36
+    }
   ],
   "predictionsAccounts": [
-    { "id": "p1", "label": "P1000", "nlv": 5210.4, "changeUsd": 42, "changePct": 0.81, "recentitems": false },
-    { "id": "p2", "label": "P2000", "nlv": 11980.65, "changeUsd": -76, "changePct": -0.63, "recentitems": false },
-    { "id": "p3", "label": "P3000", "nlv": 8450.12, "changeUsd": 133, "changePct": 1.6, "recentitems": false },
-    { "id": "p4", "label": "P4000", "nlv": 17320, "changeUsd": -54, "changePct": -0.31, "recentitems": false },
-    { "id": "p5", "label": "P5000", "nlv": 26890.75, "changeUsd": 205, "changePct": 0.77, "recentitems": true}
+    {
+      "id": "p1",
+      "label": "P1000",
+      "nlv": 5210.4,
+      "changeUsd": 42,
+      "changePct": 0.81,
+      "recentitems": false
+    },
+    {
+      "id": "p2",
+      "label": "P2000",
+      "nlv": 11980.65,
+      "changeUsd": -76,
+      "changePct": -0.63,
+      "recentitems": false
+    },
+    {
+      "id": "p3",
+      "label": "P3000",
+      "nlv": 8450.12,
+      "changeUsd": 133,
+      "changePct": 1.6,
+      "recentitems": false
+    },
+    {
+      "id": "p4",
+      "label": "P4000",
+      "nlv": 17320,
+      "changeUsd": -54,
+      "changePct": -0.31,
+      "recentitems": false
+    },
+    {
+      "id": "p5",
+      "label": "P5000",
+      "nlv": 26890.75,
+      "changeUsd": 205,
+      "changePct": 0.77,
+      "recentitems": true
+    }
   ],
   "predictionsRecentProducts": [
     {
@@ -81,31 +170,1190 @@
       "sellPrice": "535 USD"
     }
   ],
-  "allMarkets": {
-    "futures": [
-      { "id": "mkt-001", "symbol": "M001", "name": "Market 001", "volume": "100.3M", "markPrice": "1,007.13", "changePct": "+0.17%", "trend": "up" },
-      { "id": "mkt-002", "symbol": "M002", "name": "Market 002", "volume": "100.6M", "markPrice": "1,014.26", "changePct": "-0.24%", "trend": "down" },
-      { "id": "mkt-003", "symbol": "M003", "name": "Market 003", "volume": "100.9M", "markPrice": "1,021.39", "changePct": "+0.31%", "trend": "up" },
-      { "id": "mkt-004", "symbol": "M004", "name": "Market 004", "volume": "101.2M", "markPrice": "1,028.52", "changePct": "-0.38%", "trend": "down" },
-      { "id": "mkt-005", "symbol": "M005", "name": "Market 005", "volume": "101.5M", "markPrice": "1,035.65", "changePct": "+0.45%", "trend": "up" },
-      { "id": "mkt-006", "symbol": "M006", "name": "Market 006", "volume": "101.8M", "markPrice": "1,042.78", "changePct": "-0.52%", "trend": "down", "watchlisted": true },
-      { "id": "mkt-007", "symbol": "M007", "name": "Market 007", "volume": "102.1M", "markPrice": "1,049.91", "changePct": "+0.59%", "trend": "up" },
-      { "id": "mkt-008", "symbol": "M008", "name": "Market 008", "volume": "102.4M", "markPrice": "1,057.04", "changePct": "-0.66%", "trend": "down" },
-      { "id": "mkt-009", "symbol": "M009", "name": "Market 009", "volume": "102.7M", "markPrice": "1,064.17", "changePct": "+0.73%", "trend": "up" },
-      { "id": "mkt-010", "symbol": "M010", "name": "Market 010", "volume": "103.0M", "markPrice": "1,071.30", "changePct": "-0.80%", "trend": "down", "watchlisted": true, "featured": true }
-    ],
-    "predictions": []
-  },
-   "featured_markets": [
-      { "id": "mkt-001", "symbol": "M001", "name": "Market 001", "volume": "100.3M", "markPrice": "1,007.13", "changePct": "+0.17%", "trend": "up" },
-      { "id": "mkt-002", "symbol": "M002", "name": "Market 002", "volume": "100.6M", "markPrice": "1,014.26", "changePct": "-0.24%", "trend": "down" },
-      { "id": "mkt-003", "symbol": "M003", "name": "Market 003", "volume": "100.9M", "markPrice": "1,021.39", "changePct": "+0.31%", "trend": "up" },
-      { "id": "mkt-004", "symbol": "M004", "name": "Market 004", "volume": "101.2M", "markPrice": "1,028.52", "changePct": "-0.38%", "trend": "down" },
-      { "id": "mkt-005", "symbol": "M005", "name": "Market 005", "volume": "101.5M", "markPrice": "1,035.65", "changePct": "+0.45%", "trend": "up" }
+  "allMarkets": [
+    {
+      "id": "mkt-001",
+      "symbol": "M001",
+      "name": "Market 001",
+      "volume": "100.3M",
+      "markPrice": "1,007.13",
+      "changePct": "+0.17%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.005
+    },
+    {
+      "id": "mkt-002",
+      "symbol": "M002",
+      "name": "Market 002",
+      "volume": "100.6M",
+      "markPrice": "1,014.26",
+      "changePct": "-0.24%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0094
+    },
+    {
+      "id": "mkt-003",
+      "symbol": "M003",
+      "name": "Market 003",
+      "volume": "100.9M",
+      "markPrice": "1,021.39",
+      "changePct": "+0.31%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0138
+    },
+    {
+      "id": "mkt-004",
+      "symbol": "M004",
+      "name": "Market 004",
+      "volume": "101.2M",
+      "markPrice": "1,028.52",
+      "changePct": "-0.38%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0182
+    },
+    {
+      "id": "mkt-005",
+      "symbol": "M005",
+      "name": "Market 005",
+      "volume": "101.5M",
+      "markPrice": "1,035.65",
+      "changePct": "+0.45%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0226
+    },
+    {
+      "id": "mkt-006",
+      "symbol": "M006",
+      "name": "Market 006",
+      "volume": "101.8M",
+      "markPrice": "1,042.78",
+      "changePct": "-0.52%",
+      "trend": "down",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": -0.027
+    },
+    {
+      "id": "mkt-007",
+      "symbol": "M007",
+      "name": "Market 007",
+      "volume": "102.1M",
+      "markPrice": "1,049.91",
+      "changePct": "+0.59%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0314
+    },
+    {
+      "id": "mkt-008",
+      "symbol": "M008",
+      "name": "Market 008",
+      "volume": "102.4M",
+      "markPrice": "1,057.04",
+      "changePct": "-0.66%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0267
+    },
+    {
+      "id": "mkt-009",
+      "symbol": "M009",
+      "name": "Market 009",
+      "volume": "102.7M",
+      "markPrice": "1,064.17",
+      "changePct": "+0.73%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0311
+    },
+    {
+      "id": "mkt-010",
+      "symbol": "M010",
+      "name": "Market 010",
+      "volume": "103.0M",
+      "markPrice": "1,071.30",
+      "changePct": "-0.80%",
+      "trend": "down",
+      "watchlisted": true,
+      "featured": true,
+      "icon": "pound.png",
+      "pts": -0.0355
+    },
+    {
+      "id": "mkt-011",
+      "symbol": "M011",
+      "name": "Market 011",
+      "volume": "103.3M",
+      "markPrice": "1,078.43",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0399
+    },
+    {
+      "id": "mkt-012",
+      "symbol": "M012",
+      "name": "Market 012",
+      "volume": "103.6M",
+      "markPrice": "1,085.56",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0443
+    },
+    {
+      "id": "mkt-013",
+      "symbol": "M013",
+      "name": "Market 013",
+      "volume": "103.9M",
+      "markPrice": "1,092.69",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0487
+    },
+    {
+      "id": "mkt-014",
+      "symbol": "M014",
+      "name": "Market 014",
+      "volume": "104.2M",
+      "markPrice": "1,099.82",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0531
+    },
+    {
+      "id": "mkt-015",
+      "symbol": "M015",
+      "name": "Market 015",
+      "volume": "104.5M",
+      "markPrice": "1,106.95",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": 0.0484
+    },
+    {
+      "id": "mkt-016",
+      "symbol": "M016",
+      "name": "Market 016",
+      "volume": "104.8M",
+      "markPrice": "1,114.08",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0528
+    },
+    {
+      "id": "mkt-017",
+      "symbol": "M017",
+      "name": "Market 017",
+      "volume": "105.1M",
+      "markPrice": "1,121.21",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0572
+    },
+    {
+      "id": "mkt-018",
+      "symbol": "M018",
+      "name": "Market 018",
+      "volume": "105.4M",
+      "markPrice": "1,128.34",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0089
+    },
+    {
+      "id": "mkt-019",
+      "symbol": "M019",
+      "name": "Market 019",
+      "volume": "105.7M",
+      "markPrice": "1,135.47",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0133
+    },
+    {
+      "id": "mkt-020",
+      "symbol": "M020",
+      "name": "Market 020",
+      "volume": "106.0M",
+      "markPrice": "1,142.60",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0177
+    },
+    {
+      "id": "mkt-021",
+      "symbol": "M021",
+      "name": "Market 021",
+      "volume": "106.3M",
+      "markPrice": "1,149.73",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0221
+    },
+    {
+      "id": "mkt-022",
+      "symbol": "M022",
+      "name": "Market 022",
+      "volume": "106.6M",
+      "markPrice": "1,156.86",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0174
+    },
+    {
+      "id": "mkt-023",
+      "symbol": "M023",
+      "name": "Market 023",
+      "volume": "106.9M",
+      "markPrice": "1,163.99",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0218
+    },
+    {
+      "id": "mkt-024",
+      "symbol": "M024",
+      "name": "Market 024",
+      "volume": "107.2M",
+      "markPrice": "1,171.12",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0262
+    },
+    {
+      "id": "mkt-025",
+      "symbol": "M025",
+      "name": "Market 025",
+      "volume": "107.5M",
+      "markPrice": "1,178.25",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0306
+    },
+    {
+      "id": "mkt-026",
+      "symbol": "M026",
+      "name": "Market 026",
+      "volume": "107.8M",
+      "markPrice": "1,185.38",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.035
+    },
+    {
+      "id": "mkt-027",
+      "symbol": "M027",
+      "name": "Market 027",
+      "volume": "108.1M",
+      "markPrice": "1,192.51",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0394
+    },
+    {
+      "id": "mkt-028",
+      "symbol": "M028",
+      "name": "Market 028",
+      "volume": "108.4M",
+      "markPrice": "1,199.64",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0438
+    },
+    {
+      "id": "mkt-029",
+      "symbol": "M029",
+      "name": "Market 029",
+      "volume": "108.7M",
+      "markPrice": "1,206.77",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0391
+    },
+    {
+      "id": "mkt-030",
+      "symbol": "M030",
+      "name": "Market 030",
+      "volume": "109.0M",
+      "markPrice": "1,213.90",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": -0.0435
+    },
+    {
+      "id": "mkt-031",
+      "symbol": "M031",
+      "name": "Market 031",
+      "volume": "109.3M",
+      "markPrice": "1,221.03",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0479
+    },
+    {
+      "id": "mkt-032",
+      "symbol": "M032",
+      "name": "Market 032",
+      "volume": "109.6M",
+      "markPrice": "1,228.16",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0523
+    },
+    {
+      "id": "mkt-033",
+      "symbol": "M033",
+      "name": "Market 033",
+      "volume": "109.9M",
+      "markPrice": "1,235.29",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0567
+    },
+    {
+      "id": "mkt-034",
+      "symbol": "M034",
+      "name": "Market 034",
+      "volume": "110.2M",
+      "markPrice": "1,242.42",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0611
+    },
+    {
+      "id": "mkt-035",
+      "symbol": "M035",
+      "name": "Market 035",
+      "volume": "110.5M",
+      "markPrice": "1,249.55",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0128
+    },
+    {
+      "id": "mkt-036",
+      "symbol": "M036",
+      "name": "Market 036",
+      "volume": "110.8M",
+      "markPrice": "1,256.68",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0081
+    },
+    {
+      "id": "mkt-037",
+      "symbol": "M037",
+      "name": "Market 037",
+      "volume": "111.1M",
+      "markPrice": "1,263.81",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0125
+    },
+    {
+      "id": "mkt-038",
+      "symbol": "M038",
+      "name": "Market 038",
+      "volume": "111.4M",
+      "markPrice": "1,270.94",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0169
+    },
+    {
+      "id": "mkt-039",
+      "symbol": "M039",
+      "name": "Market 039",
+      "volume": "111.7M",
+      "markPrice": "1,278.07",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0213
+    },
+    {
+      "id": "mkt-040",
+      "symbol": "M040",
+      "name": "Market 040",
+      "volume": "112.0M",
+      "markPrice": "1,285.20",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "featured": true,
+      "icon": "pound.png",
+      "pts": -0.0257
+    },
+    {
+      "id": "mkt-041",
+      "symbol": "M041",
+      "name": "Market 041",
+      "volume": "112.3M",
+      "markPrice": "1,292.33",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0301
+    },
+    {
+      "id": "mkt-042",
+      "symbol": "M042",
+      "name": "Market 042",
+      "volume": "112.6M",
+      "markPrice": "1,299.46",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0345
+    },
+    {
+      "id": "mkt-043",
+      "symbol": "M043",
+      "name": "Market 043",
+      "volume": "112.9M",
+      "markPrice": "1,306.59",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0298
+    },
+    {
+      "id": "mkt-044",
+      "symbol": "M044",
+      "name": "Market 044",
+      "volume": "113.2M",
+      "markPrice": "1,313.72",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0342
+    },
+    {
+      "id": "mkt-045",
+      "symbol": "M045",
+      "name": "Market 045",
+      "volume": "113.5M",
+      "markPrice": "1,320.85",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": 0.0386
+    },
+    {
+      "id": "mkt-046",
+      "symbol": "M046",
+      "name": "Market 046",
+      "volume": "113.8M",
+      "markPrice": "1,327.98",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.043
+    },
+    {
+      "id": "mkt-047",
+      "symbol": "M047",
+      "name": "Market 047",
+      "volume": "114.1M",
+      "markPrice": "1,335.11",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0474
+    },
+    {
+      "id": "mkt-048",
+      "symbol": "M048",
+      "name": "Market 048",
+      "volume": "114.4M",
+      "markPrice": "1,342.24",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0518
+    },
+    {
+      "id": "mkt-049",
+      "symbol": "M049",
+      "name": "Market 049",
+      "volume": "114.7M",
+      "markPrice": "1,349.37",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0562
+    },
+    {
+      "id": "mkt-050",
+      "symbol": "M050",
+      "name": "Market 050",
+      "volume": "115.0M",
+      "markPrice": "1,356.50",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0515
+    },
+    {
+      "id": "mkt-051",
+      "symbol": "M051",
+      "name": "Market 051",
+      "volume": "115.3M",
+      "markPrice": "1,363.63",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0559
+    },
+    {
+      "id": "mkt-052",
+      "symbol": "M052",
+      "name": "Market 052",
+      "volume": "115.6M",
+      "markPrice": "1,370.76",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0076
+    },
+    {
+      "id": "mkt-053",
+      "symbol": "M053",
+      "name": "Market 053",
+      "volume": "115.9M",
+      "markPrice": "1,377.89",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.012
+    },
+    {
+      "id": "mkt-054",
+      "symbol": "M054",
+      "name": "Market 054",
+      "volume": "116.2M",
+      "markPrice": "1,385.02",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0164
+    },
+    {
+      "id": "mkt-055",
+      "symbol": "M055",
+      "name": "Market 055",
+      "volume": "116.5M",
+      "markPrice": "1,392.15",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0208
+    },
+    {
+      "id": "mkt-056",
+      "symbol": "M056",
+      "name": "Market 056",
+      "volume": "116.8M",
+      "markPrice": "1,399.28",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0252
+    },
+    {
+      "id": "mkt-057",
+      "symbol": "M057",
+      "name": "Market 057",
+      "volume": "117.1M",
+      "markPrice": "1,406.41",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0205
+    },
+    {
+      "id": "mkt-058",
+      "symbol": "M058",
+      "name": "Market 058",
+      "volume": "117.4M",
+      "markPrice": "1,413.54",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0249
+    },
+    {
+      "id": "mkt-059",
+      "symbol": "M059",
+      "name": "Market 059",
+      "volume": "117.7M",
+      "markPrice": "1,420.67",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0293
+    },
+    {
+      "id": "mkt-060",
+      "symbol": "M060",
+      "name": "Market 060",
+      "volume": "118.0M",
+      "markPrice": "1,427.80",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": -0.0337
+    },
+    {
+      "id": "mkt-061",
+      "symbol": "M061",
+      "name": "Market 061",
+      "volume": "118.3M",
+      "markPrice": "1,434.93",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0381
+    },
+    {
+      "id": "mkt-062",
+      "symbol": "M062",
+      "name": "Market 062",
+      "volume": "118.6M",
+      "markPrice": "1,442.06",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0425
+    },
+    {
+      "id": "mkt-063",
+      "symbol": "M063",
+      "name": "Market 063",
+      "volume": "118.9M",
+      "markPrice": "1,449.19",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0469
+    },
+    {
+      "id": "mkt-064",
+      "symbol": "M064",
+      "name": "Market 064",
+      "volume": "119.2M",
+      "markPrice": "1,456.32",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0422
+    },
+    {
+      "id": "mkt-065",
+      "symbol": "M065",
+      "name": "Market 065",
+      "volume": "119.5M",
+      "markPrice": "1,463.45",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0466
+    },
+    {
+      "id": "mkt-066",
+      "symbol": "M066",
+      "name": "Market 066",
+      "volume": "119.8M",
+      "markPrice": "1,470.58",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.051
+    },
+    {
+      "id": "mkt-067",
+      "symbol": "M067",
+      "name": "Market 067",
+      "volume": "120.1M",
+      "markPrice": "1,477.71",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0554
+    },
+    {
+      "id": "mkt-068",
+      "symbol": "M068",
+      "name": "Market 068",
+      "volume": "120.4M",
+      "markPrice": "1,484.84",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0598
+    },
+    {
+      "id": "mkt-069",
+      "symbol": "M069",
+      "name": "Market 069",
+      "volume": "120.7M",
+      "markPrice": "1,491.97",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0115
+    },
+    {
+      "id": "mkt-070",
+      "symbol": "M070",
+      "name": "Market 070",
+      "volume": "121.0M",
+      "markPrice": "1,499.10",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0159
+    },
+    {
+      "id": "mkt-071",
+      "symbol": "M071",
+      "name": "Market 071",
+      "volume": "121.3M",
+      "markPrice": "1,506.23",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0112
+    },
+    {
+      "id": "mkt-072",
+      "symbol": "M072",
+      "name": "Market 072",
+      "volume": "121.6M",
+      "markPrice": "1,513.36",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0156
+    },
+    {
+      "id": "mkt-073",
+      "symbol": "M073",
+      "name": "Market 073",
+      "volume": "121.9M",
+      "markPrice": "1,520.49",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.02
+    },
+    {
+      "id": "mkt-074",
+      "symbol": "M074",
+      "name": "Market 074",
+      "volume": "122.2M",
+      "markPrice": "1,527.62",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0244
+    },
+    {
+      "id": "mkt-075",
+      "symbol": "M075",
+      "name": "Market 075",
+      "volume": "122.5M",
+      "markPrice": "1,534.75",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": 0.0288
+    },
+    {
+      "id": "mkt-076",
+      "symbol": "M076",
+      "name": "Market 076",
+      "volume": "122.8M",
+      "markPrice": "1,541.88",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0332
+    },
+    {
+      "id": "mkt-077",
+      "symbol": "M077",
+      "name": "Market 077",
+      "volume": "123.1M",
+      "markPrice": "1,549.01",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0376
+    },
+    {
+      "id": "mkt-078",
+      "symbol": "M078",
+      "name": "Market 078",
+      "volume": "123.4M",
+      "markPrice": "1,556.14",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0329
+    },
+    {
+      "id": "mkt-079",
+      "symbol": "M079",
+      "name": "Market 079",
+      "volume": "123.7M",
+      "markPrice": "1,563.27",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0373
+    },
+    {
+      "id": "mkt-080",
+      "symbol": "M080",
+      "name": "Market 080",
+      "volume": "124.0M",
+      "markPrice": "1,570.40",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "featured": true,
+      "icon": "pound.png",
+      "pts": -0.0417
+    },
+    {
+      "id": "mkt-081",
+      "symbol": "M081",
+      "name": "Market 081",
+      "volume": "124.3M",
+      "markPrice": "1,577.53",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0461
+    },
+    {
+      "id": "mkt-082",
+      "symbol": "M082",
+      "name": "Market 082",
+      "volume": "124.6M",
+      "markPrice": "1,584.66",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0505
+    },
+    {
+      "id": "mkt-083",
+      "symbol": "M083",
+      "name": "Market 083",
+      "volume": "124.9M",
+      "markPrice": "1,591.79",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0549
+    },
+    {
+      "id": "mkt-084",
+      "symbol": "M084",
+      "name": "Market 084",
+      "volume": "125.2M",
+      "markPrice": "1,598.92",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0593
+    },
+    {
+      "id": "mkt-085",
+      "symbol": "M085",
+      "name": "Market 085",
+      "volume": "125.5M",
+      "markPrice": "1,606.05",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0546
+    },
+    {
+      "id": "mkt-086",
+      "symbol": "M086",
+      "name": "Market 086",
+      "volume": "125.8M",
+      "markPrice": "1,613.18",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0063
+    },
+    {
+      "id": "mkt-087",
+      "symbol": "M087",
+      "name": "Market 087",
+      "volume": "126.1M",
+      "markPrice": "1,620.31",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0107
+    },
+    {
+      "id": "mkt-088",
+      "symbol": "M088",
+      "name": "Market 088",
+      "volume": "126.4M",
+      "markPrice": "1,627.44",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0151
+    },
+    {
+      "id": "mkt-089",
+      "symbol": "M089",
+      "name": "Market 089",
+      "volume": "126.7M",
+      "markPrice": "1,634.57",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0195
+    },
+    {
+      "id": "mkt-090",
+      "symbol": "M090",
+      "name": "Market 090",
+      "volume": "127.0M",
+      "markPrice": "1,641.70",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "watchlisted": true,
+      "icon": "pound.png",
+      "pts": -0.0239
+    },
+    {
+      "id": "mkt-091",
+      "symbol": "M091",
+      "name": "Market 091",
+      "volume": "127.3M",
+      "markPrice": "1,648.83",
+      "changePct": "+0.19%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0283
+    },
+    {
+      "id": "mkt-092",
+      "symbol": "M092",
+      "name": "Market 092",
+      "volume": "127.6M",
+      "markPrice": "1,655.96",
+      "changePct": "-0.26%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0236
+    },
+    {
+      "id": "mkt-093",
+      "symbol": "M093",
+      "name": "Market 093",
+      "volume": "127.9M",
+      "markPrice": "1,663.09",
+      "changePct": "+0.33%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.028
+    },
+    {
+      "id": "mkt-094",
+      "symbol": "M094",
+      "name": "Market 094",
+      "volume": "128.2M",
+      "markPrice": "1,670.22",
+      "changePct": "-0.40%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0324
+    },
+    {
+      "id": "mkt-095",
+      "symbol": "M095",
+      "name": "Market 095",
+      "volume": "128.5M",
+      "markPrice": "1,677.35",
+      "changePct": "+0.47%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0368
+    },
+    {
+      "id": "mkt-096",
+      "symbol": "M096",
+      "name": "Market 096",
+      "volume": "128.8M",
+      "markPrice": "1,684.48",
+      "changePct": "-0.54%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0412
+    },
+    {
+      "id": "mkt-097",
+      "symbol": "M097",
+      "name": "Market 097",
+      "volume": "129.1M",
+      "markPrice": "1,691.61",
+      "changePct": "+0.61%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0456
+    },
+    {
+      "id": "mkt-098",
+      "symbol": "M098",
+      "name": "Market 098",
+      "volume": "129.4M",
+      "markPrice": "1,698.74",
+      "changePct": "-0.68%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.05
+    },
+    {
+      "id": "mkt-099",
+      "symbol": "M099",
+      "name": "Market 099",
+      "volume": "129.7M",
+      "markPrice": "1,705.87",
+      "changePct": "+0.75%",
+      "trend": "up",
+      "icon": "pound.png",
+      "pts": 0.0453
+    },
+    {
+      "id": "mkt-100",
+      "symbol": "M100",
+      "name": "Market 100",
+      "volume": "130.0M",
+      "markPrice": "1,713.00",
+      "changePct": "-0.12%",
+      "trend": "down",
+      "icon": "pound.png",
+      "pts": -0.0497
+    }
+  ],
+  "featured_markets": [
+    {
+      "id": "mkt-001",
+      "symbol": "M001",
+      "name": "Market 001",
+      "volume": "100.3M",
+      "markPrice": "1,007.13",
+      "changePct": "+0.17%",
+      "trend": "up"
+    },
+    {
+      "id": "mkt-002",
+      "symbol": "M002",
+      "name": "Market 002",
+      "volume": "100.6M",
+      "markPrice": "1,014.26",
+      "changePct": "-0.24%",
+      "trend": "down"
+    },
+    {
+      "id": "mkt-003",
+      "symbol": "M003",
+      "name": "Market 003",
+      "volume": "100.9M",
+      "markPrice": "1,021.39",
+      "changePct": "+0.31%",
+      "trend": "up"
+    },
+    {
+      "id": "mkt-004",
+      "symbol": "M004",
+      "name": "Market 004",
+      "volume": "101.2M",
+      "markPrice": "1,028.52",
+      "changePct": "-0.38%",
+      "trend": "down"
+    },
+    {
+      "id": "mkt-005",
+      "symbol": "M005",
+      "name": "Market 005",
+      "volume": "101.5M",
+      "markPrice": "1,035.65",
+      "changePct": "+0.45%",
+      "trend": "up"
+    }
   ],
   "pulseEvents": [
-    { "id": "p1", "time": "14:00", "day": "TODAY",    "title": "FOMC rate decision", "subtitle": "Consensus hold · in 4h 19m", "priority": "HIGH" },
-    { "id": "p2", "time": "16:00", "day": "TODAY",    "title": "RTH session close",  "subtitle": "CME extended hours follow",  "priority": "INFO" },
-    { "id": "p3", "time": "16:00", "day": "TOMORROW", "title": "CPI release",         "subtitle": "CME extended hours follow",  "priority": "HIGH" }
+    {
+      "id": "p1",
+      "time": "14:00",
+      "day": "TODAY",
+      "title": "FOMC rate decision",
+      "subtitle": "Consensus hold · in 4h 19m",
+      "priority": "HIGH"
+    },
+    {
+      "id": "p2",
+      "time": "16:00",
+      "day": "TODAY",
+      "title": "RTH session close",
+      "subtitle": "CME extended hours follow",
+      "priority": "INFO"
+    },
+    {
+      "id": "p3",
+      "time": "16:00",
+      "day": "TOMORROW",
+      "title": "CPI release",
+      "subtitle": "CME extended hours follow",
+      "priority": "HIGH"
+    }
   ]
 }
