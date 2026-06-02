@@ -1330,6 +1330,46 @@
       "trend": "up"
     }
   ],
+  "portfolio": {
+    "netLiquidity": {
+      "total": 12540.25,
+      "unrealizedPnL": 187.00,
+      "realizedPnL": 1350.00,
+      "availableCapital": 8025.76,
+      "chart": {
+        "activeTab": "Value",
+        "timeframe": "1M"
+      }
+    },
+    "marginOverview": {
+      "percentUsed": 36,
+      "usedMargin": 4514.49,
+      "availableMargin": 8025.76,
+      "riskLevel": "low"
+    },
+    "positions": [
+      {
+        "instrument": "M6B",
+        "units": 5,
+        "entryPrice": 1.2710,
+        "margin": 2000.00,
+        "lastPrice": 1.2718,
+        "priceChange": 0.18,
+        "pnl": 325.00,
+        "pnlPercent": 2.71
+      },
+      {
+        "instrument": "MGC",
+        "units": 2,
+        "entryPrice": 2337.10,
+        "margin": 2514.49,
+        "lastPrice": 2330.20,
+        "priceChange": -0.42,
+        "pnl": -138.00,
+        "pnlPercent": -1.09
+      }
+    ]
+  },
   "pulseEvents": [
     {
       "id": "p1",

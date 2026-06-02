@@ -9,4 +9,5 @@ export const DATA_CHANNELS = {
   pulseEvents:               () => data.pulseEvents,
   allMarkets:                () => data.allMarkets,
   featured_markets:          () => data.featured_markets,
+  portfolio:                 () => data.portfolio,
 };
