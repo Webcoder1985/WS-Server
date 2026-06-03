@@ -1370,6 +1370,30 @@
       }
     ]
   },
+  "orders": {
+    "active": [
+      { "id": "a1", "name": "E-Micro British Pound", "symbol": "6B", "volume": "173.2M", "icon": "pound.png", "side": "buy", "filledCount": 2, "price": "1.99814", "currency": "USD", "unitsBought": 2, "priceEach": "0.99907", "lastPrice": 1.00124, "changePct": 0.22, "takeProfit": 1.0180, "stopLoss": 0.9870 },
+      { "id": "a2", "name": "E-Micro Euro", "symbol": "6E", "volume": "241.5M", "icon": "pound.png", "side": "sell", "filledCount": 1, "price": "1.08523", "currency": "USD", "unitsBought": 1, "priceEach": "1.08523", "lastPrice": 1.08310, "changePct": -0.20, "takeProfit": 1.0700, "stopLoss": 1.0960 },
+      { "id": "a3", "name": "Gold Futures", "symbol": "GC", "volume": "98.7M", "icon": "pound.png", "side": "buy", "filledCount": 3, "price": "1872.45", "currency": "USD", "unitsBought": 3, "priceEach": "624.15", "lastPrice": 626.80, "changePct": 0.38, "takeProfit": 645.00, "stopLoss": 608.00 },
+      { "id": "a4", "name": "NBA Futures", "symbol": "NBA", "volume": "32.1M", "icon": "pound.png", "side": "buy", "filledCount": 1, "price": "45.50", "currency": "USD", "unitsBought": 1, "priceEach": "45.50", "lastPrice": 46.25, "changePct": 1.65, "takeProfit": 50.00, "stopLoss": 42.00 },
+      { "id": "a5", "name": "E-Micro British Pound", "symbol": "6B", "volume": "173.2M", "icon": "pound.png", "side": "sell", "filledCount": 2, "price": "2.00124", "currency": "USD", "unitsBought": 2, "priceEach": "1.00062", "lastPrice": 0.99880, "changePct": -0.18, "takeProfit": 0.9870, "stopLoss": 1.0130 },
+      { "id": "a6", "name": "E-Micro Euro", "symbol": "6E", "volume": "241.5M", "icon": "pound.png", "side": "buy", "filledCount": 1, "price": "1.08750", "currency": "USD", "unitsBought": 1, "priceEach": "1.08750", "lastPrice": 1.09060, "changePct": 0.29, "takeProfit": 1.1100, "stopLoss": 1.0700 },
+      { "id": "a7", "name": "Gold Futures", "symbol": "GC", "volume": "98.7M", "icon": "pound.png", "side": "sell", "filledCount": 2, "price": "1868.20", "currency": "USD", "unitsBought": 2, "priceEach": "934.10", "lastPrice": 931.40, "changePct": -0.29, "takeProfit": 910.00, "stopLoss": 952.00 },
+      { "id": "a8", "name": "NBA Futures", "symbol": "NBA", "volume": "32.1M", "icon": "pound.png", "side": "buy", "filledCount": 1, "price": "22.75", "currency": "USD", "unitsBought": 1, "priceEach": "22.75", "lastPrice": 23.15, "changePct": 1.76, "takeProfit": 26.00, "stopLoss": 20.50 }
+    ],
+    "recent": [
+      { "id": "r1", "name": "E-Micro British Pound", "symbol": "6B", "volume": "173.2M", "icon": "pound.png", "side": "buy", "filledCount": 4, "price": "3.99628", "currency": "USD", "unitsBought": 4, "priceEach": "0.99907", "lastPrice": 1.00340, "changePct": 0.43, "takeProfit": 1.0200, "stopLoss": 0.9850 },
+      { "id": "r2", "name": "Gold Futures", "symbol": "GC", "volume": "98.7M", "icon": "pound.png", "side": "sell", "filledCount": 1, "price": "1875.00", "currency": "USD", "unitsBought": 1, "priceEach": "1875.00", "lastPrice": 1869.50, "changePct": -0.29, "takeProfit": 1820.00, "stopLoss": 1910.00 },
+      { "id": "r3", "name": "E-Micro Euro", "symbol": "6E", "volume": "241.5M", "icon": "pound.png", "side": "buy", "filledCount": 2, "price": "2.17046", "currency": "USD", "unitsBought": 2, "priceEach": "1.08523", "lastPrice": 1.08750, "changePct": 0.21, "takeProfit": 1.1050, "stopLoss": 1.0680 },
+      { "id": "r4", "name": "NBA Futures", "symbol": "NBA", "volume": "32.1M", "icon": "pound.png", "side": "sell", "filledCount": 3, "price": "136.50", "currency": "USD", "unitsBought": 3, "priceEach": "45.50", "lastPrice": 44.80, "changePct": -1.54, "takeProfit": 40.00, "stopLoss": 49.00 },
+      { "id": "r5", "name": "E-Micro British Pound", "symbol": "6B", "volume": "173.2M", "icon": "pound.png", "side": "sell", "filledCount": 1, "price": "1.00062", "currency": "USD", "unitsBought": 1, "priceEach": "1.00062", "lastPrice": 0.99820, "changePct": -0.24, "takeProfit": 0.9850, "stopLoss": 1.0120 },
+      { "id": "r6", "name": "Gold Futures", "symbol": "GC", "volume": "98.7M", "icon": "pound.png", "side": "buy", "filledCount": 2, "price": "1248.30", "currency": "USD", "unitsBought": 2, "priceEach": "624.15", "lastPrice": 627.40, "changePct": 0.52, "takeProfit": 648.00, "stopLoss": 605.00 },
+      { "id": "r7", "name": "E-Micro Euro", "symbol": "6E", "volume": "241.5M", "icon": "pound.png", "side": "sell", "filledCount": 1, "price": "1.08750", "currency": "USD", "unitsBought": 1, "priceEach": "1.08750", "lastPrice": 1.08490, "changePct": -0.24, "takeProfit": 1.0680, "stopLoss": 1.1020 },
+      { "id": "r8", "name": "NBA Futures", "symbol": "NBA", "volume": "32.1M", "icon": "pound.png", "side": "buy", "filledCount": 2, "price": "45.50", "currency": "USD", "unitsBought": 2, "priceEach": "22.75", "lastPrice": 23.40, "changePct": 2.86, "takeProfit": 26.50, "stopLoss": 21.00 },
+      { "id": "r9", "name": "E-Micro British Pound", "symbol": "6B", "volume": "173.2M", "icon": "pound.png", "side": "buy", "filledCount": 3, "price": "2.99721", "currency": "USD", "unitsBought": 3, "priceEach": "0.99907", "lastPrice": 1.00215, "changePct": 0.31, "takeProfit": 1.0190, "stopLoss": 0.9860 },
+      { "id": "r10", "name": "Gold Futures", "symbol": "GC", "volume": "98.7M", "icon": "pound.png", "side": "sell", "filledCount": 2, "price": "3744.40", "currency": "USD", "unitsBought": 2, "priceEach": "1872.20", "lastPrice": 1868.90, "changePct": -0.18, "takeProfit": 1830.00, "stopLoss": 1905.00 }
+    ]
+  },
   "pulseEvents": [
     {
       "id": "p1",
