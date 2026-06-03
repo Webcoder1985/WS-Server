@@ -96,8 +96,7 @@ function handleSubscribe(ws, user, msg) {
   ws.subscriptions.set(ch, params);
   ws.lastTickType = ch;
   console.log(`[ws] subscribe ${user} → ${ch} page=${params.page} limit=${params.limit}`);
-  const ok = sendDataList(ws, ch, params);
-  if (ok) ws.send(JSON.stringify({ type: 'subscribed', channel: ch, ...params, t: Date.now() }));
+  sendDataList(ws, ch, params);
 }
 
 function handlePaginate(ws, user, msg) {
